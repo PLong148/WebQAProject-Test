@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script language="javascript" src="https://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <title>Edit Success </title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //<![CDATA[
+        $.get("https://longstestproject.herokuapp.com/user", function(result) {
+            alert("Edit Success");
+            window.location = "https://longstestproject.herokuapp.com/profile/" + result.id;
+        });
+        //]]>
+    </script>
+
+</body>
+
+</html>
